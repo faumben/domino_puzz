@@ -4,6 +4,7 @@ import sys
 import pygame
 
 import constants
+
 # ---------------------------------
 
 
@@ -16,7 +17,9 @@ from constants import (
 )
 
 from board import Board
-from helpers import random_dominoes, layout_sidebar
+from helpers import random_dominoes, layout_sidebar, get_solvable_puzzles
+solvables = get_solvable_puzzles()
+
 
 FONT_HINT = pygame.font.SysFont(None, FONT_SIZE)
 
