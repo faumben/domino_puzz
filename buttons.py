@@ -1,0 +1,1 @@
+#TODO add buttons for resetting the puzzle, generating new random puzzle, or getting a puzzle from the solvable list
