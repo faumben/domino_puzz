@@ -2,7 +2,7 @@
 
 A puzzle starts with an empty grid and a sidebar of dominos. Your task is to place all of them onto the grid into a valid configuration.
 
-Each **domino** covers **two adjacent cells**, and each side of a domino contains a **pip** value, 1 through 6
+Each **domino** covers **two adjacent cells**, and each side of a domino contains a **pip** value, **0** through **6**
 
 ## Valid Configuration
 
