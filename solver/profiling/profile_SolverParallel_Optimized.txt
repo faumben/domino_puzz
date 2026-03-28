@@ -1,0 +1,45 @@
+--- SolverParallel_Optimized Performance ---
+Success Rate: 14 / 14
+Total Time: 76.76s
+Total Nodes Processed: 40256747
+Average Global Speed: 524452 nodes/sec
+(Note: Profile times below for Parallel workers only show main-thread wait times, not worker processing times)
+
+         3322818 function calls (3255154 primitive calls) in 76.759 seconds
+
+   Ordered by: internal time
+   List reduced from 578 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    26038   69.962    0.003   69.962    0.003 {built-in method _winapi.WaitForMultipleObjects}
+      280    1.307    0.005    1.307    0.005 {built-in method _winapi.CreateProcess}
+     3500    0.451    0.000    0.451    0.000 {built-in method _winapi.WaitForSingleObject}
+     4047    0.424    0.000   43.033    0.011 C:\Python312\Lib\concurrent\futures\_base.py:263(wait)
+    17780    0.403    0.000   71.358    0.004 C:\Python312\Lib\multiprocessing\connection.py:1031(wait)
+    31152    0.238    0.000    0.238    0.000 {built-in method _winapi.ReadFile}
+     8757    0.186    0.000   72.475    0.008 C:\Python312\Lib\concurrent\futures\process.py:415(wait_result_broken_or_wakeup)
+60696/1958    0.170    0.000   76.666    0.039 {method 'acquire' of '_thread.lock' objects}
+   205766    0.160    0.000    0.160    0.000 {built-in method builtins.getattr}
+     5422    0.145    0.000    0.174    0.000 {method 'dump' of '_pickle.Pickler' objects}
+4074/4060    0.140    0.000    0.391    0.000 C:\Python312\Lib\threading.py:637(wait)
+9470/9336    0.131    0.000    0.129    0.000 {built-in method _winapi.WriteFile}
+    25920    0.131    0.000    0.131    0.000 {method 'cancel' of '_winapi.Overlapped' objects}
+216240/216239    0.130    0.000    0.225    0.000 C:\Python312\Lib\threading.py:299(__enter__)
+     9056    0.124    0.000    0.124    0.000 {built-in method _winapi.PeekNamedPipe}
+   216240    0.115    0.000    0.165    0.000 C:\Python312\Lib\threading.py:302(__exit__)
+    17780    0.106    0.000   70.137    0.004 C:\Python312\Lib\multiprocessing\connection.py:1009(_exhaustive_wait)
+     4594    0.105    0.000   26.632    0.006 C:\Python312\Lib\concurrent\futures\process.py:810(submit)
+   172214    0.095    0.000    0.134    0.000 C:\Python312\Lib\multiprocessing\process.py:247(sentinel)
+     4582    0.087    0.000    0.087    0.000 {built-in method _pickle.loads}
+     4046    0.071    0.000    0.155    0.000 C:\Python312\Lib\concurrent\futures\_base.py:155(_create_and_install_waiters)
+   175610    0.070    0.000    0.070    0.000 {method '__enter__' of '_thread.RLock' objects}
+   201050    0.068    0.000    0.068    0.000 {method 'append' of 'list' objects}
+40664/40445    0.067    0.000    0.066    0.000 {method 'GetOverlappedResult' of '_winapi.Overlapped' objects}
+9470/9318    0.065    0.000    0.305    0.000 C:\Python312\Lib\multiprocessing\connection.py:182(send_bytes)
+    21157    0.064    0.000    0.064    0.000 {method 'release' of '_thread.lock' objects}
+    13835    0.064    0.000    0.125    0.000 C:\Python312\Lib\queue.py:154(get)
+     9305    0.059    0.000    0.329    0.000 C:\Python312\Lib\concurrent\futures\process.py:392(add_call_item_to_queue)
+   161871    0.056    0.000    0.056    0.000 {method 'remove' of 'list' objects}
+     5422    0.052    0.000    0.069    0.000 C:\Python312\Lib\multiprocessing\reduction.py:38(__init__)
+
+

@@ -36,7 +36,7 @@ def init() -> None:
     # HEIGHT /= 2
     # Grid / display ----------------------------------------------------
     BOARD_SZ = 16  # squares along each board edge
-    CELL_SIZE = int(min(HEIGHT, WIDTH ) /16)  # px per square
+    CELL_SIZE = int(min(HEIGHT, WIDTH ) /BOARD_SZ)  # px per square
     SIDEBAR_WIDTH = WIDTH - BOARD_SZ * CELL_SIZE
     SIDEBAR_PAD = (HEIGHT - (DOMINO_NUM * (CELL_SIZE+1))) /(DOMINO_NUM+1)
     FONT_SIZE = int(HEIGHT * .04)

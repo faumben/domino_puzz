@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domino Puzzle</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <div class="sidebar">
+      <h1 class="title">Domino<br>Puzzle</h1>
+      <div id="status-indicator" class="indicator valid-incomplete">Incomplete</div>
+      
+      <div class="controls">
+        <button id="btn-new">New Puzzle</button>
+        <button id="btn-reset">Reset Board</button>
+      </div>
+
+      <div class="domino-pool" id="domino-pool">
+        <p class="pool-hint">Drag dominoes to the board.<br>Click or press 'R' to rotate.</p>
+        <!-- Dominoes go here -->
+      </div>
+    </div>
+    
+    <div class="board-container">
+      <div class="board" id="board">
+        <!-- Grid cells dynamically generated -->
+      </div>
+    </div>
+  </div>
+  
+  <script src="puzzles.js"></script>
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
